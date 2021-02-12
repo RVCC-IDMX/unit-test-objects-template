@@ -1,15 +1,15 @@
 /* resistor.js */
 
 /* 
+  elctronic resistors have colored bands where each color represents a numerical number
+  Electrical engineers can read the colors and
+  determine the resitance value in Ohms
+
   see this resistor calculator for help
    http://bit.ly/2NjS274
 */
 
-function getColorValue(color) {
-  /* 
-    elctronic resistors have colored bands where each color represents a numerical number
-  */
-  
+function getColorValue(color) {  
   // for a given color,
   // use the below object and
   // return the color's numerical value
@@ -26,7 +26,7 @@ function getColorValue(color) {
     gray: 8,
     white: 9,
   }
-  return colors[color];
+  
 }
 
 
@@ -36,8 +36,7 @@ function getBandPairValue(bands) {
   // for example: blue green
   // returns a 65
   // but green blue returns a 56
-  const [b1, b2] = bands;
-  return getColorValue(b1) * 10  + getColorValue(b2);
+  
 }
 
 function formatNumber(val) {
@@ -51,17 +50,11 @@ function formatNumber(val) {
   // 260,000 would return 260k
   // 2,600,000 would return 2.6M
   // 2,600,000,000 would return 2.6G
-  const ranges = [
-    { divider: 1e9 , suffix: 'G' },
-    { divider: 1e6 , suffix: 'M' },
-    { divider: 1e3 , suffix: 'k' }
-  ];
-  for (let i = 0; i < ranges.length; i++) {
-    if (val >= ranges[i].divider) {
-      return (val / ranges[i].divider).toString() + ranges[i].suffix;
-    }
-  }
-  return val.toString();
+  //
+  // Hint: I found a solution from stackoverflow
+  // Be careful, if you copy older code make
+  // sure you replace var with either const or let
+
 }
 
 function getValueWithMultiplier(value, color) {
@@ -69,7 +62,7 @@ function getValueWithMultiplier(value, color) {
   // by the power of ten as 
   // represented by the color code
   // return the result
-  return Math.pow(10, getColorValue(color)) * value;
+  
 }
 
 function getTolerance(color) {
@@ -78,18 +71,6 @@ function getTolerance(color) {
   // For example, 
   // 'violet' returns ±0.1%
   // 
-  const colors = {
-    brown: '±1%',
-    red: '±2%',
-    green: '±0.5%',
-    blue: '±0.25%',
-    violet: '±0.1%',
-    grey: '±0.05%',
-    gray: '±0.05%',
-    gold: '±5%',
-    silver: '±10%',
-  }
-  return colors[color];
 
 }
 
@@ -107,13 +88,6 @@ function getResistorOhms(bands) {
   
    USE THE FUNCTIONS ALREADY CREATED
   */
-  
-  let val = getBandPairValue([bands[0], bands[1]]);
-  val = getValueWithMultiplier(val, bands[2]);
-  const ohms = formatNumber(val);
-  const tolerance = getTolerance(bands[3]);
-  return `Resistor value: ${ohms} Ohms ${tolerance}`;
-
   
 }
 

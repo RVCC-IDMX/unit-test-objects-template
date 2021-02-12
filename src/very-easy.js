@@ -5,20 +5,14 @@ function isInRange(num, obj) {
   // min and max properties, return true 
   // if the number lies within the given 
   // range(inclusive)
-  if (num >= obj.min && num <= obj.max) {
-    return true;
-  }
-  return false;
+
 }
 
 function isEmptyObject(obj) {
   // return true if an object is empty, 
   // return false otherwise
   // it is empty if there are no keys
-  if (Object.keys(obj).length == 0) {
-    return true;
-  }
-  return false;
+
 }
 
 function getVolumeOfBox(box) {
@@ -27,7 +21,6 @@ function getVolumeOfBox(box) {
   // and length of a box and returns the 
   // volume of the box.
 
-  return box.height * box.width * box.length;
 }
 
 module.exports = {
