@@ -15,6 +15,10 @@ function isEmptyObject(obj) {
 
 }
 
+function getObjLength(obj) {
+  // return the length of an object
+}
+
 function getVolumeOfBox(box) {
   // Create a function that gets 
   // an object that holds the height, width 
@@ -26,5 +30,6 @@ function getVolumeOfBox(box) {
 module.exports = {
   isInRange,
   isEmptyObject,
+  getObjLength,
   getVolumeOfBox,
 };

@@ -3,6 +3,7 @@
 const {
   isInRange,
   isEmptyObject,
+  getObjLength,
   getVolumeOfBox,
 } = require('../src/very-easy');
 
@@ -53,6 +54,23 @@ test('check if an object is not an empty object', () => {
     breed: 'Chihuahua'
   }
   expect(isEmptyObject(myDog)).toBe(false);
+});
+
+/* getObjLength */
+
+test('check the length of an empty object is 0', () => {
+  const empty = {};
+  expect(getObjLength(empty)).toBe(0);
+});
+
+
+test('check the length of myDog object is 3', () => {
+  const myDog = {
+    name: 'Gizmo',
+    age: 13,
+    breed: 'Chihuahua'
+  };
+  expect(getObjLength(myDog)).toBe(3);
 });
 
 /* getVolumeOfBox */
