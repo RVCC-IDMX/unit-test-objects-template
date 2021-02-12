@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1613086873808" clover="3.2.0">
+  <project timestamp="1613086873808" name="All files">
+    <metrics statements="28" coveredstatements="28" conditionals="8" coveredconditionals="8" methods="10" coveredmethods="10" elements="46" coveredelements="46" complexity="0" loc="28" ncloc="28" packages="1" files="3" classes="3"/>
+    <file name="resistor.js" path="/Users/cynthia/Documents/2021-Spring-JS/js-object-check/src/resistor.js">
+      <metrics statements="18" coveredstatements="18" conditionals="2" coveredconditionals="2" methods="6" coveredmethods="6"/>
+      <line num="16" count="10" type="stmt"/>
+      <line num="29" count="10" type="stmt"/>
+      <line num="39" count="3" type="stmt"/>
+      <line num="40" count="3" type="stmt"/>
+      <line num="54" count="7" type="stmt"/>
+      <line num="59" count="7" type="stmt"/>
+      <line num="60" count="16" type="cond" truecount="2" falsecount="0"/>
+      <line num="61" count="6" type="stmt"/>
+      <line num="64" count="1" type="stmt"/>
+      <line num="72" count="2" type="stmt"/>
+      <line num="81" count="9" type="stmt"/>
+      <line num="92" count="9" type="stmt"/>
+      <line num="111" count="1" type="stmt"/>
+      <line num="112" count="1" type="stmt"/>
+      <line num="113" count="1" type="stmt"/>
+      <line num="114" count="1" type="stmt"/>
+      <line num="115" count="1" type="stmt"/>
+      <line num="120" count="1" type="stmt"/>
+    </file>
+    <file name="times.js" path="/Users/cynthia/Documents/2021-Spring-JS/js-object-check/src/times.js">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="9" count="1" type="stmt"/>
+    </file>
+    <file name="very-easy.js" path="/Users/cynthia/Documents/2021-Spring-JS/js-object-check/src/very-easy.js">
+      <metrics statements="8" coveredstatements="8" conditionals="6" coveredconditionals="6" methods="3" coveredmethods="3"/>
+      <line num="8" count="4" type="cond" truecount="4" falsecount="0"/>
+      <line num="9" count="3" type="stmt"/>
+      <line num="11" count="1" type="stmt"/>
+      <line num="18" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="19" count="1" type="stmt"/>
+      <line num="21" count="1" type="stmt"/>
+      <line num="30" count="1" type="stmt"/>
+      <line num="33" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
