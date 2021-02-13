@@ -20,7 +20,6 @@ test('resistor color green is 5', () => {
   expect(getColorValue('green')).toBe(5);
 });
 
-
 /* getBandPairValue */
 
 test('band pair value of yellow/violet is 47', () => {
