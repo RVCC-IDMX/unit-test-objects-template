@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* times.test.js */
 
 const times = require('../src/times');

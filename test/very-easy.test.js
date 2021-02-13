@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* very-easy.test.js */
 
 const {
