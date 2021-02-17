@@ -6,6 +6,7 @@ function removeObjProperty(obj, key) {
   // but with the property with the
   // given key removed
   // do not change the given property
+  // just remove it
 
 }
 module.exports = removeObjProperty;
